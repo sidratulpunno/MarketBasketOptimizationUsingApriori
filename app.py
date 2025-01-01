@@ -27,8 +27,8 @@ if transactions is None:
 
 def train_apriori(transactions):
     rules = apriori(transactions=transactions,
-                    min_support=0.003,
-                    min_confidence=0.2,
+                    min_support=0.001,
+                    min_confidence=0.1,
                     min_lift=3,
                     min_length=2,
                     max_length=2)
